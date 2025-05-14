@@ -9,7 +9,7 @@ const Checkout = () => {
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    let localStorageData = JSON.parse(localStorage.getItem("munfirm"));
+    let localStorageData = JSON.parse(localStorage.getItem("Munfirm"));
     setTotalPrice(localStorageData.totalPrice);
     setShipping(localStorageData.shipping);
     setVat(localStorageData.vat);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-const munfirmSlider = () => {
+const MunfirmSlider = () => {
   const [active, setActive] = useState(1);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -11,4 +11,4 @@ const munfirmSlider = () => {
   }, [active]);
   return { active, setActive };
 };
-export default munfirmSlider;
+export default MunfirmSlider;

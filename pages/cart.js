@@ -43,7 +43,7 @@ const CartPage = () => {
       (Number(subTotal_()) + Number(vat) + Number(shipping)).toFixed(2)
     );
     localStorage.setItem(
-      "munfirm",
+      "Munfirm",
       JSON.stringify({ subTotal, totalPrice, shipping, vat, cartData })
     );
   });

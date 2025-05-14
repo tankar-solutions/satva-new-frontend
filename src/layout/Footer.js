@@ -174,7 +174,7 @@ const DefaultFooter = () => (
         </div>
       </div>
       <div className="copyright-area pt-25 pb-10">
-        <p>Copyright © 2022 MunFirm. All Rights Reserved.</p>
+        <p>Copyright © 2022 Munfirm. All Rights Reserved.</p>
         <ul className="footer-menu">
           <li>
             <Link legacyBehavior href="/contact">
@@ -460,7 +460,7 @@ const Footer3 = () => (
     <div className="copyright-area-wrap">
       <div className="container-fluid">
         <div className="copyright-area pt-25 pb-10">
-          <p>Copyright © 2022 MunFirm. All Rights Reserved.</p>
+          <p>Copyright © 2022 Munfirm. All Rights Reserved.</p>
           <ul className="footer-menu">
             <li>
               <Link legacyBehavior href="/contact">

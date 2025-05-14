@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Fragment } from "react";
-import munfirmSlider from "../munfirmSlider";
+import MunfirmSlider from "../MunfirmSlider";
 export const HomeSlider1 = () => {
-  const { active, setActive } = munfirmSlider();
+  const { active, setActive } = MunfirmSlider();
   return (
     <Fragment>
       <button
@@ -21,7 +21,7 @@ export const HomeSlider1 = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="slider-content">
-                <div className="sub-title mb-20">Welcome to Munfirm</div>
+                <div className="sub-title mb-20">Welcome to SatvaCare</div>
                 <h1>Organic Foods &amp; Vegetables</h1>
                 <h6>25 Years of experience in agriculture farming</h6>
                 <div className="slider-btns mt-30">
@@ -162,7 +162,7 @@ export const HomeSlider1 = () => {
   );
 };
 export const HomeSlider2 = () => {
-  const { active, setActive } = munfirmSlider();
+  const { active, setActive } = MunfirmSlider();
   return (
     <Fragment>
       <button
@@ -266,7 +266,7 @@ export const HomeSlider2 = () => {
   );
 };
 export const HomeSlider3 = () => {
-  const { active, setActive } = munfirmSlider();
+  const { active, setActive } = MunfirmSlider();
   return (
     <Fragment>
       <button

@@ -5,6 +5,7 @@ import PageBanner from "../src/components/PageBanner";
 import ExperienceTeam from "../src/components/slider/ExperienceTeam";
 import PhotoGallery from "../src/components/slider/PhotoGallery";
 import Layout from "../src/layout/Layout";
+
 const About = () => {
   return (
     <Layout>
@@ -18,13 +19,10 @@ const About = () => {
               <div className="about-three-content rmb-35 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-20">
                   <span className="sub-title mb-20">About Company</span>
-                  <h2>Organic &amp; Helathy Foods Provider Farming</h2>
+                  <h2>SatvaCare: Pioneering Organic Farming Solutions</h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo enim voluptatem
+                  SatvaCare offers a wide range of ECOCERT-approved, NOP-NPOP certified, and patented pest management solutions which include Bio-insecticides, Bio-Fungicides, Bio-Acaricides, Adjuvants, and CIBRC certified Neem Based Products. We aim to become a force to reckon within organic farming, reducing the cost of production for farmers while sustaining biodiversity and healthy living through our products.
                 </p>
                 <div className="row mt-30">
                   <div className="col-md-6">
@@ -34,7 +32,7 @@ const About = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Agriculture &amp; Foods
+                          Bio-insecticides
                         </Link>
                       </h4>
                     </div>
@@ -46,7 +44,7 @@ const About = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Vegetables &amp; Fruits
+                          Bio-Fungicides
                         </Link>
                       </h4>
                     </div>
@@ -58,7 +56,7 @@ const About = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Farming products
+                          Bio-Acaricides
                         </Link>
                       </h4>
                     </div>
@@ -70,7 +68,7 @@ const About = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Crisp Bread &amp; Cake’s
+                          Adjuvants
                         </Link>
                       </h4>
                     </div>
@@ -107,95 +105,11 @@ const About = () => {
         />
       </section>
       {/* About Section End */}
-      {/* Features Section Start */}
-      <section className="feature-section pb-100 rpb-70 rel z-1">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-4 col-md-6">
-              <div className="feature-item wow fadeInUp delay-0-2s">
-                <div className="content">
-                  <span className="number">01</span>
-                  <div className="image">
-                    <img
-                      src="assets/images/features/feature1.png"
-                      alt="Feature"
-                    />
-                  </div>
-                  <h4>Satva Vams</h4>
-                  <p>
-                    Quis autem vel eum reprehenderit quiea voluptate velit esse
-                    quam niyate smolestiae consequatur nulla
-                  </p>
-                </div>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="feature-item color-two wow fadeInUp delay-0-4s">
-                <div className="content">
-                  <span className="number">02</span>
-                  <div className="image">
-                    <img
-                      src="assets/images/features/feature2.png"
-                      alt="Feature"
-                    />
-                  </div>
-                  <h4>Organic Fruits</h4>
-                  <p>
-                    Quis autem vel eum reprehenderit quiea voluptate velit esse
-                    quam niyate smolestiae consequatur nulla
-                  </p>
-                </div>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="feature-item color-three wow fadeInUp delay-0-6s">
-                <div className="content">
-                  <span className="number">03</span>
-                  <div className="image">
-                    <img
-                      src="assets/images/features/feature3.png"
-                      alt="Feature"
-                    />
-                  </div>
-                  <h4>Agriculture &amp; Farming</h4>
-                  <p>
-                    Quis autem vel eum reprehenderit quiea voluptate velit esse
-                    quam niyate smolestiae consequatur nulla
-                  </p>
-                </div>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Features Section End */}
       {/* Gallery Area Start */}
       <section className="gallery-area">
         <PhotoGallery noHeader />
       </section>
       {/* Gallery Area End */}
-      {/* Team Area Start */}
-      <section className="team-area pt-50 rpt-20 pb-95 rpb-65">
-        <div className="container">
-          <ExperienceTeam />
-        </div>
-      </section>
-      {/* Team Area End */}
       {/* About Section Start */}
       <section className="about-section-two rel z-1">
         <div className="container">
@@ -218,7 +132,7 @@ const About = () => {
               <div className="about-two-content pt-60 wow fadeInUp delay-0-4s">
                 <div className="section-title mb-35">
                   <span className="sub-title mb-20">Why Choose Us</span>
-                  <h2>Special Care For Our Every Food &amp; Vegetable Lover</h2>
+                  <h2>Leading the Way in Organic Pest Management</h2>
                 </div>
                 <div className="about-features mt-60">
                   <div className="row">
@@ -230,10 +144,10 @@ const About = () => {
                         </div>
                         <h4>
                           <Link legacyBehavior href="/service-details">
-                            Discount Options
+                            ECOCERT-Approved
                           </Link>
                         </h4>
-                        <p>Sit amet consectetur adipis cing elit sed eiusmoe</p>
+                        <p>Our products are ECOCERT-approved, ensuring high standards of organic farming.</p>
                         <img src="assets/images/about/arrow.png" alt="Arrow" />
                       </div>
                     </div>
@@ -245,10 +159,10 @@ const About = () => {
                         </div>
                         <h4>
                           <Link legacyBehavior href="/service-details">
-                            Best Return Policy
+                            NOP-NPOP Certified
                           </Link>
                         </h4>
-                        <p>Sit amet consectetur adipis cing elit sed eiusmoe</p>
+                        <p>We adhere to NOP-NPOP certification standards for organic products.</p>
                         <img src="assets/images/about/arrow.png" alt="Arrow" />
                       </div>
                     </div>
@@ -260,10 +174,10 @@ const About = () => {
                         </div>
                         <h4>
                           <Link legacyBehavior href="/service-details">
-                            Online Support
+                            Patented Solutions
                           </Link>
                         </h4>
-                        <p>Sit amet consectetur adipis cing elit sed eiusmoe</p>
+                        <p>Our patented pest management solutions are designed for effectiveness and sustainability.</p>
                         <img src="assets/images/about/arrow.png" alt="Arrow" />
                       </div>
                     </div>
@@ -331,4 +245,5 @@ const About = () => {
     </Layout>
   );
 };
+
 export default About;

@@ -2,7 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/products": "pages/products.js",
+  "/about-us": "pages/about-us.js",
+  "/why-us": "pages/why-us.js",
   "/product-details": "pages/product-details.js",
-  "/contact": "pages/contact.js",
-  "/": "pages/index.js"
+  "/blog": "pages/blog.js",
+  "/contact": "pages/contact.js"
 }

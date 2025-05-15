@@ -132,9 +132,9 @@ const Index = () => {
                     <img src="assets/images/about/about3.jpg" alt="About" />
                   </div>
                 </div>
-                <div className="offer">
+                {/* <div className="offer">
                   <img src="assets/images/shapes/organic.png" alt="Offer" />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-6">
@@ -314,15 +314,14 @@ const Index = () => {
         <div className="container-fluid">
           <div className="section-title text-center mb-60">
             <span className="sub-title mb-20">
-              Popular Foods and Vegetables
+            Nourishing Earth, Growing Health
             </span>
-            <h2>Quality Fruits &amp; Vegetables</h2>
+            <h2>Our Products</h2>
           </div>
           <Slider {...productActive} className="product-active">
             <div className="product-item wow fadeInUp delay-0-2s">
-              <span className="offer">53 Off</span>
               <div className="image">
-                <img src="assets/images/products/product1.png" alt="Product" />
+                <img src="assets/images/products/satva-vam.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -334,18 +333,18 @@ const Index = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Organic Brocolli
+                    Satva Vam
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>25</del>
-                  <span>18</span>
+                  {/* <del>25</del> */}
+                  <span>9999</span>
                 </span>
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-3s">
               <div className="image">
-                <img src="assets/images/products/product2.png" alt="Product" />
+                <img src="assets/images/products/agro-vam.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -357,18 +356,18 @@ const Index = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Fresh Carrots
+                    Agro Vam
                   </Link>
                 </h5>
                 <span className="price">
-                  <span>49.58</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-4s">
-              <span className="offer bg-red">sale</span>
+              {/* <span className="offer bg-red">sale</span> */}
               <div className="image">
-                <img src="assets/images/products/product3.png" alt="Product" />
+                <img src="assets/images/products/mercury.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -380,19 +379,19 @@ const Index = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Organic Brocolli
+                    Mercury
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>25</del>
-                  <span>18</span>
+                  {/* <del>25</del> */}
+                  <span>9999</span>
                 </span>
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-5s">
-              <span className="offer">20 Off</span>
+              {/* <span className="offer">20 Off</span> */}
               <div className="image">
-                <img src="assets/images/products/product4.png" alt="Product" />
+                <img src="assets/images/products/stofi.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -404,18 +403,18 @@ const Index = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Chiken Egg
+                    Stofi
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  {/* <del>55</del> */}
+                  <span>9999</span>
                 </span>
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-6s">
               <div className="image">
-                <img src="assets/images/products/product5.png" alt="Product" />
+                <img src="assets/images/products/agni-manthan.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -427,18 +426,18 @@ const Index = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Fresh Gooseberry
+                    Agni-Manthan
                   </Link>
                 </h5>
                 <span className="price">
-                  <span>205</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-7s">
-              <span className="offer">53 Off</span>
+              {/* <span className="offer">53 Off</span> */}
               <div className="image">
-                <img src="assets/images/products/product6.png" alt="Product" />
+                <img src="assets/images/products/bliss.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -450,19 +449,19 @@ const Index = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Fresh Croissants
+                    Bliss
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>25</del>
-                  <span>18</span>
+                  {/* <del>25</del> */}
+                  <span>9999</span>
                 </span>
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-8s">
-              <span className="offer">25 Off</span>
+              {/* <span className="offer">25 Off</span> */}
               <div className="image">
-                <img src="assets/images/products/product7.png" alt="Product" />
+                <img src="assets/images/products/dhara-manthan.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -474,12 +473,12 @@ const Index = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Chiken Egg’s
+                    Dhara-Manthan
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>25</del>
-                  <span>18</span>
+                  {/* <del>25</del> */}
+                  <span>9999</span>
                 </span>
               </div>
             </div>

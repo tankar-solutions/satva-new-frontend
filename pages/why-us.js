@@ -9,8 +9,8 @@ import Layout from "../src/layout/Layout";
 const WhyUs = () => {
   return (
     <Layout>
-      <PageBanner pageName={"why us"} />
-      {/* Why Us Hero Section */}
+      <PageBanner pageName={"Why Us"} />
+      {/* R&D Hero Section */}
       <section className="about-section-two rel z-1 py-130 rpy-100">
         <div className="container">
           <div className="row flex-row-reverse align-items-center">
@@ -19,20 +19,20 @@ const WhyUs = () => {
                 <img
                   className="image"
                   src="assets/images/about/about-page-left.jpg"
-                  alt="Why Us"
+                  alt="R&D"
                 />
                 <img
                   className="about-over"
                   src="assets/images/about/about-left-over.png"
-                  alt="Why Us"
+                  alt="R&D"
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="about-two-content pt-60 wow fadeInUp delay-0-4s">
                 <div className="section-title mb-35">
-                  <span className="sub-title mb-20">Why Choose Us</span>
-                  <h2>Experience the Difference: Our Promise to You</h2>
+                  <span className="sub-title mb-20">Research & Development</span>
+                  <h2>Innovation Engine of SatvaCare</h2>
                 </div>
                 <div className="about-features mt-60">
                   <div className="row">
@@ -44,10 +44,10 @@ const WhyUs = () => {
                         </div>
                         <h4>
                           <Link legacyBehavior href="/service-details">
-                            Exclusive Discounts
+                            High Rate of New Product Delivery
                           </Link>
                         </h4>
-                        <p>Enjoy special offers and savings on healthy, organic products.</p>
+                        <p>Maintaining a high rate of new product delivery to the end of the decade.</p>
                         <img src="assets/images/about/arrow.png" alt="Arrow" />
                       </div>
                     </div>
@@ -59,10 +59,10 @@ const WhyUs = () => {
                         </div>
                         <h4>
                           <Link legacyBehavior href="/service-details">
-                            Easy Returns
+                            Targeted Early Research
                           </Link>
                         </h4>
-                        <p>Shop confidently with our customer-friendly return policy.</p>
+                        <p>Investing in targeted early research for breakthrough innovation post-2020.</p>
                         <img src="assets/images/about/arrow.png" alt="Arrow" />
                       </div>
                     </div>
@@ -74,10 +74,10 @@ const WhyUs = () => {
                         </div>
                         <h4>
                           <Link legacyBehavior href="/service-details">
-                            24/7 Support
+                            Quality and Yield Improvement
                           </Link>
                         </h4>
-                        <p>Our team is always here to help you, day or night.</p>
+                        <p>Searching for new and improved ways of raising the quality and yield of crops worldwide.</p>
                         <img src="assets/images/about/arrow.png" alt="Arrow" />
                       </div>
                     </div>
@@ -92,99 +92,20 @@ const WhyUs = () => {
           <img src="assets/images/shapes/about-shape2.png" alt="Shape" />
         </div>
       </section>
-      {/* Why Us Hero Section End */}
+      {/* R&D Hero Section End */}
 
-      {/* Features Section - Horizontal Cards */}
-      <section className="feature-section pb-100 rpb-70 rel z-1 bg-light-green">
-        <div className="container">
-          <div className="section-title text-center mb-60">
-            <span className="sub-title mb-20">Our Strengths</span>
-            <h2>What Makes Us Stand Out</h2>
-          </div>
-          <div className="row">
-            <div className="col-md-4">
-              <div className="feature-item wow fadeInUp delay-0-2s">
-                <div className="content">
-                  <span className="number">01</span>
-                  <div className="image">
-                    <img
-                      src="assets/images/features/feature1.png"
-                      alt="Feature"
-                    />
-                  </div>
-                  <h4>Organic Vegetables</h4>
-                  <p>
-                    Fresh, healthy, and grown with care - our vegetables are always organic and delicious.
-                  </p>
-                </div>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="feature-item color-two wow fadeInUp delay-0-4s">
-                <div className="content">
-                  <span className="number">02</span>
-                  <div className="image">
-                    <img
-                      src="assets/images/features/feature2.png"
-                      alt="Feature"
-                    />
-                  </div>
-                  <h4>Organic Fruits</h4>
-                  <p>
-                    Taste the difference with our hand-picked, naturally ripened fruits.
-                  </p>
-                </div>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="feature-item color-three wow fadeInUp delay-0-6s">
-                <div className="content">
-                  <span className="number">03</span>
-                  <div className="image">
-                    <img
-                      src="assets/images/features/feature3.png"
-                      alt="Feature"
-                    />
-                  </div>
-                  <h4>Agriculture &amp; Farming</h4>
-                  <p>
-                    Our sustainable farming practices ensure quality and care from seed to table.
-                  </p>
-                </div>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Features Section End */}
-
-      {/* Why Us Video & Quick Facts */}
+      {/* R&D Video & Quick Facts */}
       <section className="about-page-section rel z-1 py-100 rpy-80">
         <div className="container">
           <div className="row align-items-center flex-row-reverse">
             <div className="col-lg-6">
               <div className="about-three-content rmb-35 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-20">
-                  <span className="sub-title mb-20">Trusted by Many</span>
-                  <h2>Why Our Customers Love Us</h2>
+                  <span className="sub-title mb-20">Facilities & Expertise</span>
+                  <h2>Our R&D Capabilities</h2>
                 </div>
                 <p>
-                  Our commitment to quality, sustainability, and customer service has earned us the trust of thousands. See why families and businesses choose us for their organic needs.
+                  Our R&D team is dedicated to working on various research projects that match our vision to replace chemical inputs with organic alternatives, ensuring lower production costs at the farmer level.
                 </p>
                 <div className="row mt-30">
                   <div className="col-md-6">
@@ -194,7 +115,7 @@ const WhyUs = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Agriculture &amp; Foods
+                          Analytical Lab
                         </Link>
                       </h4>
                     </div>
@@ -206,7 +127,7 @@ const WhyUs = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Vegetables &amp; Fruits
+                          Pathology Lab
                         </Link>
                       </h4>
                     </div>
@@ -218,7 +139,7 @@ const WhyUs = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Farming Products
+                          Soil Science Lab
                         </Link>
                       </h4>
                     </div>
@@ -230,7 +151,7 @@ const WhyUs = () => {
                       </div>
                       <h4>
                         <Link legacyBehavior href="/service-details">
-                          Crisp Bread &amp; Cake’s
+                          Entomology Lab
                         </Link>
                       </h4>
                     </div>
@@ -243,7 +164,7 @@ const WhyUs = () => {
                 <img
                   className="image"
                   src="assets/images/about/about-page.jpg"
-                  alt="Why Us"
+                  alt="R&D"
                 />
                 <a
                   href="https://www.youtube.com/watch?v=9Y7ma241N8k"
@@ -266,23 +187,7 @@ const WhyUs = () => {
           className="shape"
         />
       </section>
-      {/* Why Us Video & Quick Facts End */}
-
-      {/* Gallery Section */}
-      <section className="gallery-area pt-80 pb-80">
-        <PhotoGallery noHeader />
-      </section>
-
-      {/* Team Section */}
-      <section className="team-area pt-50 rpt-20 pb-95 rpb-65 bg-white">
-        <div className="container">
-          <div className="section-title text-center mb-60">
-            <span className="sub-title mb-20">Meet Our Experts</span>
-            <h2>Passionate People Behind Our Quality</h2>
-          </div>
-          <ExperienceTeam />
-        </div>
-      </section>
+      {/* R&D Video & Quick Facts End */}
 
       {/* Feedback Section */}
       <section className="feedback-section pt-100 rpt-70 pb-130 rpb-100">
@@ -314,7 +219,3 @@ const WhyUs = () => {
 };
 
 export default WhyUs;
-
-
-
-

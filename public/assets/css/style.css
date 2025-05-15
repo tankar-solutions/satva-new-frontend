@@ -4594,6 +4594,8 @@ h1, h2, h3, h4, h5, h6, blockquote, .tag-coulds a {
     .product-item .image img {
       top: 50%;
       left: 50%;
+      width: 60%;
+      /* height: 100%; */
       position: absolute;
       display: inline-block;
       -webkit-transform: translate(-50%, -50%);

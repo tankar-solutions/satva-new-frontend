@@ -3,6 +3,8 @@ import PageBanner from "../src/components/PageBanner";
 import Pagination from "../src/components/Pagination";
 import Layout from "../src/layout/Layout";
 import ClientLogoSlider from "../src/components/ClientLogoSlider";
+import Slider from "react-slick";
+import { productActive } from "../src/sliderProps";
 
 
 // Product data
@@ -163,57 +165,184 @@ const Products = () => {
       </section>
 
       {/* Feature Highlights */}
-      <section className="feature-section pb-60 rpb-40 rel z-1">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <div className="feature-item wow fadeInUp delay-0-2s">
-                <div className="content">
-                  <span className="number">01</span>
-                  <div className="image">
-                    <img src="assets/images/features/feature1.png" alt="Feature" />
-                  </div>
-                  <h4>Certified Organic</h4>
-                  <p>
-                    Only the best, certified organic produce for your family.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="feature-item color-two wow fadeInUp delay-0-4s">
-                <div className="content">
-                  <span className="number">02</span>
-                  <div className="image">
-                    <img src="assets/images/features/feature2.png" alt="Feature" />
-                  </div>
-                  <h4>Farm Fresh</h4>
-                  <p>
-                    Picked at peak ripeness and delivered at peak freshness.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="feature-item color-three wow fadeInUp delay-0-6s">
-                <div className="content">
-                  <span className="number">03</span>
-                  <div className="image">
-                    <img src="assets/images/features/feature3.png" alt="Feature" />
-                  </div>
-                  <h4>Great Variety</h4>
-                  <p>
-                    Vegetables, fruits, eggs, and more-something for every table.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <section className="product-section pt-100 rpt-70 pb-130 rpb-100">
+        <div className="container-fluid">
+        <div className="section-title text-center mb-60">
+            <span className="sub-title mb-20">
+            Nourishing Earth, Growing Health
+            </span>
+            <h2>Our Products</h2>
           </div>
+          <Slider {...productActive} className="product-active">
+            <div className="product-item wow fadeInUp delay-0-2s">
+              <div className="image">
+                <img src="assets/images/products/satva-vam.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Satva Vam
+                  </Link>
+                </h5>
+                <span className="price">
+                  {/* <del>25</del> */}
+                  <span>9999</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-3s">
+              <div className="image">
+                <img src="assets/images/products/agro-vam.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Agro Vam
+                  </Link>
+                </h5>
+                <span className="price">
+                  <span>9999</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-4s">
+              {/* <span className="offer bg-red">sale</span> */}
+              <div className="image">
+                <img src="assets/images/products/mercury.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Mercury
+                  </Link>
+                </h5>
+                <span className="price">
+                  {/* <del>25</del> */}
+                  <span>9999</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-5s">
+              {/* <span className="offer">20 Off</span> */}
+              <div className="image">
+                <img src="assets/images/products/stofi.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Stofi
+                  </Link>
+                </h5>
+                <span className="price">
+                  {/* <del>55</del> */}
+                  <span>9999</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-6s">
+              <div className="image">
+                <img src="assets/images/products/agni-manthan.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Agni-Manthan
+                  </Link>
+                </h5>
+                <span className="price">
+                  <span>9999</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-7s">
+              {/* <span className="offer">53 Off</span> */}
+              <div className="image">
+                <img src="assets/images/products/bliss.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Bliss
+                  </Link>
+                </h5>
+                <span className="price">
+                  {/* <del>25</del> */}
+                  <span>9999</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-8s">
+              {/* <span className="offer">25 Off</span> */}
+              <div className="image">
+                <img src="assets/images/products/dhara-manthan.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Dhara-Manthan
+                  </Link>
+                </h5>
+                <span className="price">
+                  {/* <del>25</del> */}
+                  <span>9999</span>
+                </span>
+              </div>
+            </div>
+          </Slider>
         </div>
       </section>
 
       {/* Products Grid */}
-      <section className="shop-page rel z-1 pt-60 pb-100 rpb-80">
+      {/* <section className="shop-page rel z-1 pt-60 pb-100 rpb-80">
         <div className="container">
           <div className="shop-shorter rel z-3 pt-10 mb-40 wow fadeInUp delay-0-2s">
             <div className="products-dropdown">
@@ -277,7 +406,7 @@ const Products = () => {
             />
           </ul>
         </div>
-      </section>
+      </section> */}
        <div className="client-logo-section text-center bg-light-green py-60">
         <div className="container">
           <ClientLogoSlider />

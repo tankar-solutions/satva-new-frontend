@@ -64,8 +64,8 @@ export default class PhotoGallery extends Component {
             className="gallery-active"
           >
             <div className="gallery-item wow fadeInUp delay-0-2s">
-              <img src="assets/images/gellery/gallery1.jpg" alt="Gallery" />
-              <div className="gallery-over">
+              <img src="assets/images/gellery/1.png" alt="Gallery" />
+              {/* <div className="gallery-over">
                 <div className="content">
                   <h4>Organic Fruits</h4>
                   <p>Fresh Food</p>
@@ -75,11 +75,11 @@ export default class PhotoGallery extends Component {
                     <i className="fas fa-arrow-right" />
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="gallery-item big-item wow fadeInUp delay-0-4s">
-              <img src="assets/images/gellery/gallery2.jpg" alt="Gallery" />
-              <div className="gallery-over">
+              <img src="assets/images/gellery/2.png" alt="Gallery" />
+              {/* <div className="gallery-over">
                 <div className="content">
                   <h4>Organic Fruits Juice</h4>
                   <p>Fresh Food &amp; Vegetable</p>
@@ -89,11 +89,11 @@ export default class PhotoGallery extends Component {
                     <i className="fas fa-arrow-right" />
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="gallery-item wow fadeInUp delay-0-6s">
-              <img src="assets/images/gellery/gallery3.jpg" alt="Gallery" />
-              <div className="gallery-over">
+              <img src="assets/images/gellery/3.png" alt="Gallery" />
+              {/* <div className="gallery-over">
                 <div className="content">
                   <h4>Organic Fruits</h4>
                   <p>Vegetable</p>
@@ -103,11 +103,11 @@ export default class PhotoGallery extends Component {
                     <i className="fas fa-arrow-right" />
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="gallery-item wow fadeInUp delay-0-8s">
-              <img src="assets/images/gellery/gallery4.jpg" alt="Gallery" />
-              <div className="gallery-over">
+              <img src="assets/images/gellery/4.png" alt="Gallery" />
+              {/* <div className="gallery-over">
                 <div className="content">
                   <h4>Organic Fruits</h4>
                   <p>Fresh Food</p>
@@ -117,7 +117,7 @@ export default class PhotoGallery extends Component {
                     <i className="fas fa-arrow-right" />
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </Slider>
         </div>

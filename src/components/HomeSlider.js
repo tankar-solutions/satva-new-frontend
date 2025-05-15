@@ -22,15 +22,15 @@ export const HomeSlider1 = () => {
             <div className="col-lg-6">
               <div className="slider-content">
                 <div className="sub-title mb-20">Welcome to SatvaCare</div>
-                <h1>Organic Foods &amp; Vegetables</h1>
+                <h1>Nourishing Earth, Growing Health</h1>
                 <h6>25 Years of experience in agriculture farming</h6>
                 <div className="slider-btns mt-30">
-                  <Link legacyBehavior href="/shop-grid">
+                  <Link legacyBehavior href="/products">
                     <a className="theme-btn style-two">
                       Shop Now <i className="fas fa-angle-double-right" />
                     </a>
                   </Link>
-                  <Link legacyBehavior href="/about">
+                  <Link legacyBehavior href="/contact">
                     <a className="theme-btn style-two">
                       Learn More <i className="fas fa-angle-double-right" />
                     </a>
@@ -45,11 +45,11 @@ export const HomeSlider1 = () => {
                   src="assets/images/slider/slider-image1.png"
                   alt="Slider"
                 />
-                <img
+                {/* <img
                   className="offer"
                   src="assets/images/shapes/organic.png"
                   alt="Organic"
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -96,25 +96,25 @@ export const HomeSlider1 = () => {
                   src="assets/images/slider/slider-image2.png"
                   alt="Slider"
                 />
-                <img
+                {/* <img
                   className="offer"
                   src="assets/images/shapes/organic.png"
                   alt="Organic"
-                />
+                /> */}
               </div>
             </div>
             <div className="col-lg-6">
               <div className="slider-content">
-                <div className="sub-title mb-20">Welcome to Munfirm</div>
-                <h1>Organic Foods &amp; Vegetables</h1>
+                <div className="sub-title mb-20">Welcome to SatvaCare</div>
+                <h1>Sowing Wellness, Harvesting Health</h1>
                 <h6>25 Years of experience in agriculture farming</h6>
                 <div className="slider-btns mt-30">
-                  <Link legacyBehavior href="/shop-grid">
+                  <Link legacyBehavior href="/products">
                     <a className="theme-btn style-two">
                       Shop Now <i className="fas fa-angle-double-right" />
                     </a>
                   </Link>
-                  <Link legacyBehavior href="/about">
+                  <Link legacyBehavior href="/contact">
                     <a className="theme-btn style-two">
                       Learn More <i className="fas fa-angle-double-right" />
                     </a>
@@ -184,12 +184,12 @@ export const HomeSlider2 = () => {
                 <div className="sub-title mb-20">Welcome to Munfirm</div>
                 <h1>Organic Foods &amp; Vegetables</h1>
                 <div className="slider-btns mt-30">
-                  <Link legacyBehavior href="/shop-grid">
+                  <Link legacyBehavior href="/products">
                     <a className="theme-btn style-two">
                       Shop Now <i className="fas fa-angle-double-right" />
                     </a>
                   </Link>
-                  <Link legacyBehavior href="/about">
+                  <Link legacyBehavior href="/contact">
                     <a className="theme-btn style-two">
                       Learn More <i className="fas fa-angle-double-right" />
                     </a>
@@ -204,11 +204,11 @@ export const HomeSlider2 = () => {
                   src="assets/images/slider/slider-two1.png"
                   alt="Slider"
                 />
-                <img
+                {/* <img
                   className="offer"
                   src="assets/images/shapes/organic.png"
                   alt="Organic"
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ export const HomeSlider2 = () => {
                       Learn More <i className="fas fa-angle-double-right" />
                     </a>
                   </Link>
-                  <Link legacyBehavior href="/shop-grid">
+                  <Link legacyBehavior href="/products">
                     <a className="theme-btn style-two">
                       Shop Now <i className="fas fa-angle-double-right" />
                     </a>
@@ -246,11 +246,11 @@ export const HomeSlider2 = () => {
                   src="assets/images/slider/slider-two3.png"
                   alt="Slider"
                 />
-                <img
+                {/* <img
                   className="offer"
                   src="assets/images/shapes/organic.png"
                   alt="Organic"
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -292,12 +292,12 @@ export const HomeSlider3 = () => {
                   dislike men who are so beguiled and demoralized
                 </p>
                 <div className="slider-btns mt-20">
-                  <Link legacyBehavior href="/shop-grid">
+                  <Link legacyBehavior href="/products">
                     <a className="theme-btn style-two">
                       Shop Now <i className="fas fa-angle-double-right" />
                     </a>
                   </Link>
-                  <Link legacyBehavior href="/about">
+                  <Link legacyBehavior href="/contact">
                     <a className="theme-btn style-three">
                       Learn More <i className="fas fa-angle-double-right" />
                     </a>
@@ -342,12 +342,12 @@ export const HomeSlider3 = () => {
                   dislike men who are so beguiled and demoralized
                 </p>
                 <div className="slider-btns mt-20">
-                  <Link legacyBehavior href="/shop-grid">
+                  <Link legacyBehavior href="/products">
                     <a className="theme-btn style-two">
                       Shop Now <i className="fas fa-angle-double-right" />
                     </a>
                   </Link>
-                  <Link legacyBehavior href="/about">
+                  <Link legacyBehavior href="/contact">
                     <a className="theme-btn style-three">
                       Learn More <i className="fas fa-angle-double-right" />
                     </a>

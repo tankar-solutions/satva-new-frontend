@@ -2,10 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js",
-  "/shop-grid": "pages/shop-grid.js",
-  "/shop-left-sidebar": "pages/shop-left-sidebar.js",
   "/": "pages/index.js",
-  "/shop-right-sidebar": "pages/shop-right-sidebar.js",
-  "/product-details": "pages/product-details.js"
+  "/contact": "pages/contact.js"
 }

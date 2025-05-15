@@ -18,20 +18,20 @@ const ContactUs = () => {
                 </div>
                 <div className="content">
                   <h4>Location</h4>
-                  <span>57 Main Street, 2nd Block 3rd Floor, New York</span>
+                  <span>At Movaiya, Beside World Steel,
+                    Paddhari - Mitana Road, Paddhari,
+                    Rajkot - Gujarat.</span>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6">
+            <div className="col-xl-5 col-md-6">
               <div className="contact-info-item wow fadeInUp delay-0-5s">
                 <div className="icon">
                   <img src="assets/images/contact/icon2.png" alt="Icon" />
                 </div>
                 <div className="content">
                   <h4>Email Us</h4>
-                  <a href="mailto:organicfarm@mail.net">organicfarm@mail.net</a>
-                  <br />
-                  <a href="mailto:support@info.com">support@info.com</a>
+                  <a href="mailto:shasvatcropscience@gmail.com">shasvatcropscience@gmail.com</a>
                   <br />
                 </div>
               </div>
@@ -43,9 +43,7 @@ const ContactUs = () => {
                 </div>
                 <div className="content">
                   <h4>Phone Us</h4>
-                  <a href="callto:+000(111)345678">+000 (111) 345 678</a>
-                  <br />
-                  <a href="callto:+012(345)67899">+012 (345) 678 99</a>
+                  <a href="callto:+000(111)345678">+91 88 66 908 906</a>
                 </div>
               </div>
             </div>

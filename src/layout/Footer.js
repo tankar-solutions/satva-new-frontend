@@ -153,28 +153,27 @@ const DefaultFooter = () => (
         <div className="col-lg-4 col-md-6 order-md-3">
           <div className="footer-widget contact-widget">
             <h4 className="footer-title">Contact Us</h4>
-            <p>
-              Quis autem vel eum reprehenderit voluptate velit esse quamnue{" "}
-            </p>
             <ul>
               <li>
                 <i className="fal fa-map-marker-alt" />
-                53 Main Street, 2nd Mountain 3rd Floor, New York
+                At Movaiya, Beside World Steel,
+                    Paddhari - Mitana Road, Paddhari,
+                    Rajkot - Gujarat.
               </li>
               <li>
                 <i className="far fa-envelope" />
-                <a href="calto:+012(345)67899">+012 (345) 678 99</a>
+                <a href="calto:+91 88 66 908 906"> +91 88 66 908 906</a>
               </li>
               <li>
                 <i className="far fa-phone" />
-                <a href="mailto:support@gmail.com">support@gmail.com</a>
+                <a href="mailto:shasvatcropscience@gmail.com">shasvatcropscience@gmail.com</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="copyright-area pt-25 pb-10">
-        <p>Copyright © 2022 Munfirm. All Rights Reserved.</p>
+        <p>Copyright © 2022 SatvaCare. All Rights Reserved.</p>
         <ul className="footer-menu">
           <li>
             <Link legacyBehavior href="/contact">
@@ -379,15 +378,17 @@ const Footer3 = () => (
                 <ul>
                   <li>
                     <i className="fal fa-map-marker-alt" />
-                    53 Main Street, 2nd Mountain 3rd Floor, New York
+                    At Movaiya, Beside World Steel,
+                    Paddhari - Mitana Road, Paddhari,
+                    Rajkot - Gujarat.
                   </li>
                   <li>
                     <i className="far fa-phone" />
-                    <a href="mailto:support@gmail.com">support@gmail.com</a>
+                    <a href="mailto:shasvatcropscience@gmail.com">shasvatcropscience@gmail.com</a>
                   </li>
                   <li>
                     <i className="far fa-envelope" />
-                    <a href="calto:+012(345)67899">+012 (345) 678 99</a>
+                    <a href="calto:+012(345)67899"> +91 88 66 908 906</a>
                   </li>
                 </ul>
               </div>

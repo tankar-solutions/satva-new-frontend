@@ -8,16 +8,74 @@ import CustomerReviews from "../src/components/slider/CustomerReviews";
 import PhotoGallery from "../src/components/slider/PhotoGallery";
 import Layout from "../src/layout/Layout";
 import { productActive } from "../src/sliderProps";
+
 const MunfimCountdown = dynamic(
   () => import("../src/components/MunfimCountdown"),
   {
     ssr: false,
   }
 );
+
 const Index = () => {
+  // Mock product data
+ const products = [
+    {
+        id: 1,
+        name: "Satva Vam",
+        description: "Satva vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+        price: 55.96,
+        image: "/assets/images/products/product1.png"
+    },
+    {
+        id: 2,
+        name: "Agro Vam",
+        description: "Agro Vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+        price: 85,
+        image: "/assets/images/products/product2.png"
+    },
+    {
+        id: 3,
+        name: "Agni Manthan",
+        description: "Agni Manthan is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+        price: 18,
+        image: "/assets/images/products/product3.png"
+    },
+    {
+        id: 4,
+        name: "Bliss",
+        description: "Bliss is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+        price: 36,
+        oldPrice: 55,
+        image: "/assets/images/products/product4.png"
+    },
+    {
+        id: 5,
+        name: "Dhara Manthan",
+        description: "Dhara Manthan is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+        price: 205,
+        image: "/assets/images/products/product5.png"
+    },
+    {
+        id: 6,
+        name: "Kloris",
+        description: "Kloris is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+        price: 36,
+        oldPrice: 55,
+        image: "/assets/images/products/product6.png"
+    },
+    {
+        id: 7,
+        name: "Manglow",
+        description: "Manglow is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+        price: 36,
+        oldPrice: 55,
+        image: "/assets/images/products/product7.png"
+    }
+];
+
   return (
     <Layout header={1}>
-      {/*End Hidden Sidebar */}
+      {/* End Hidden Sidebar */}
       {/* Slider Section Start */}
       <section className="slider-section bg-lighter">
         <div className="main-slider-active">
@@ -319,170 +377,32 @@ const Index = () => {
             <h2>Quality Fruits &amp; Vegetables</h2>
           </div>
           <Slider {...productActive} className="product-active">
-            <div className="product-item wow fadeInUp delay-0-2s">
-              <span className="offer">53 Off</span>
-              <div className="image">
-                <img src="assets/images/products/product1.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
+            {products.map((product) => (
+              <div key={product.id} className="product-item wow fadeInUp delay-0-2s">
+                {product.offer && <span className="offer">{product.offer}</span>}
+                <div className="image">
+                  <img src={product.image} alt="Product" />
                 </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Organic Brocolli
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>25</del>
-                  <span>18</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-3s">
-              <div className="image">
-                <img src="assets/images/products/product2.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
+                <div className="content">
+                  <div className="ratting">
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                  </div>
+                  <h5>
+                    <Link legacyBehavior href={`/product-details/${product.id}`}>
+                      {product.name}
+                    </Link>
+                  </h5>
+                  <span className="price">
+                    {product.oldPrice && <del>{product.oldPrice}</del>}
+                    <span>{product.price}</span>
+                  </span>
                 </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Fresh Carrots
-                  </Link>
-                </h5>
-                <span className="price">
-                  <span>49.58</span>
-                </span>
               </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-4s">
-              <span className="offer bg-red">sale</span>
-              <div className="image">
-                <img src="assets/images/products/product3.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Organic Brocolli
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>25</del>
-                  <span>18</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-5s">
-              <span className="offer">20 Off</span>
-              <div className="image">
-                <img src="assets/images/products/product4.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Chiken Egg
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>55</del>
-                  <span>36</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-6s">
-              <div className="image">
-                <img src="assets/images/products/product5.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Fresh Gooseberry
-                  </Link>
-                </h5>
-                <span className="price">
-                  <span>205</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-7s">
-              <span className="offer">53 Off</span>
-              <div className="image">
-                <img src="assets/images/products/product6.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Fresh Croissants
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>25</del>
-                  <span>18</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-8s">
-              <span className="offer">25 Off</span>
-              <div className="image">
-                <img src="assets/images/products/product7.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Chiken Egg’s
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>25</del>
-                  <span>18</span>
-                </span>
-              </div>
-            </div>
+            ))}
           </Slider>
         </div>
       </section>

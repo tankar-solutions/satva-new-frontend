@@ -4,7 +4,91 @@ import Slider from "react-slick";
 import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 import { productActiveTwo } from "../src/sliderProps";
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+
 const ProductDetails = () => {
+  const router = useRouter();
+  const { id } = router.query;
+  const [product, setProduct] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    if (id) {
+      // Mock data fetching
+      const products = [
+        {
+          id: 1,
+          name: "Satva Vam",
+          description: "Satva vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+          price: 55.96,
+          image: "assets/images/products/satva-vam.png"
+        },
+        {
+          id: 2,
+          name: "Agro Vam",
+          description: "Agro Vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+          price: 85,
+          image: "assets/images/products/agro-vam.png"
+        },
+        {
+          id: 3,
+          name: "Agni Manthan",
+          description: "Agni Manthan is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+          price: 18,
+          image: "assets/images/products/agni-manthan.png"
+        },
+        {
+          id: 4,
+          name: "Bliss",
+          description: "Bliss is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+          price: 36,
+          oldPrice: 55,
+          image: "assets/images/products/bliss.png"
+        },
+        {
+          id: 5,
+          name: "Dhara Manthan",
+          description: "Dhara Manthan is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+          price: 205,
+          image: "assets/images/products/dhara-manthan.png"
+        },
+        {
+          id: 6,
+          name: "Kloris",
+          description: "Kloris is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+          price: 36,
+          oldPrice: 55,
+          image: "assets/images/products/kloris.png"
+        },
+        {
+          id: 7,
+          name: "Manglow",
+          description: "Manglow is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.",
+          price: 36,
+          oldPrice: 55,
+          image: "assets/images/products/manglow.png"
+        },
+        // Add more products as needed
+      ];
+
+      const selectedProduct = products.find(p => p.id === parseInt(id));
+      if (selectedProduct) {
+        setProduct(selectedProduct);
+      } else {
+        setError("Product not found");
+      }
+    }
+  }, [id]);
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
+  if (!product) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <Layout>
       <PageBanner pageName={"Product Details"} />
@@ -21,12 +105,12 @@ const ProductDetails = () => {
                     position: "relative",
                     overflow: "hidden",
                     borderRadius: "8px",
-                    background: "transparent", 
+                    background: "transparent",
                     border: "none",
                   }}
                 >
                   <a
-                    href="assets/images/products/satva-vam.png"
+                    href={product.image}
                     style={{
                       position: "absolute",
                       top: 0,
@@ -37,7 +121,7 @@ const ProductDetails = () => {
                     }}
                   >
                     <img
-                      src="assets/images/products/satva-vam.png"
+                      src={product.image}
                       alt="Preview"
                       style={{
                         width: "100%",
@@ -52,15 +136,15 @@ const ProductDetails = () => {
             <div className="col-xl-5 col-lg-6">
               <div className="product-details-content mb-30 wow fadeInRight delay-0-2s">
                 <div className="section-title mb-20">
-                  <h2>Satva Vam</h2>
+                  <h2>{product.name}</h2>
                 </div>
                 <p>
-                Satva vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM),
-                 available in both granular and hyphal powder form. It is a beneficial fungus that forms a
-                 symbiotic association with plant roots, enabling better absorption of essential nutrients
-                  like phosphorus, nitrogen, and other micronutrients from the soil.
+                  {product.description}
                 </p>
-                <span className="price mb-20">55.96</span>
+                <span className="price mb-20">
+                  {product.oldPrice && <del>{product.oldPrice}</del>}
+                  <span>{product.price}</span>
+                </span>
                 <hr />
                 <form
                   onSubmit={(e) => e.preventDefault()}
@@ -78,19 +162,6 @@ const ProductDetails = () => {
                     Add to Cart <i className="fas fa-angle-double-right" />
                   </button>
                 </form>
-                {/* <ul className="category-tags pt-10">
-                  <li>
-                    <b>Category</b>
-                    <span>:</span>
-                    <a href="#">Green</a>
-                    <a href="#">Vegetables</a>
-                  </li>
-                  <li>
-                    <b>Tags</b>
-                    <span>:</span>
-                    <a href="#">Organic</a>
-                  </li>
-                </ul> */}
               </div>
             </div>
           </div>
@@ -105,33 +176,24 @@ const ProductDetails = () => {
                   Description
                 </Nav.Link>
               </li>
-        
             </Nav>
             <Tab.Content className="tab-content wow fadeInUp delay-0-2s">
               <Tab.Pane className="tab-pane" eventKey="details">
                 <p>
-                Satva vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.
-
+                  {product.description}
                 </p>
                 <ul className="list-style-one">
-                  <li>Enhances root development and strengthens the root system.
-                  </li>
-                  <li>
-                  Increases plant resistance to both abiotic stress (drought, cold) and biotic stress (soil-borne pathogens).
-                  </li>
-                  <li>
-                  Improves soil texture and structure, enhancing water retention and uptake by plants.
-                  </li>
+                  <li>Enhances root development and strengthens the root system.</li>
+                  <li>Increases plant resistance to both abiotic stress (drought, cold) and biotic stress (soil-borne pathogens).</li>
+                  <li>Improves soil texture and structure, enhancing water retention and uptake by plants.</li>
                   <li>Acts as a natural facilitator for better nutrient availability and plant growth.</li>
                 </ul>
               </Tab.Pane>
-            
             </Tab.Content>
           </Tab.Container>
         </div>
       </section>
-      {/* Product Details End */}
-      {/* Revidew Form Area Start */}
+      {/* Review Form Area Start */}
       <div className="review-form-area pt-65">
         <div className="container">
           <form
@@ -218,7 +280,7 @@ const ProductDetails = () => {
           </form>
         </div>
       </div>
-      {/* Revidew Form Area End */}
+      {/* Review Form Area End */}
       {/* Related Products Start */}
       <section className="related-product rel z-1 pt-125 rpt-95 pb-130 rpb-100">
         <div className="container">
@@ -239,7 +301,7 @@ const ProductDetails = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h5>
-                  <Link legacyBehavior href="/product-details">
+                  <Link legacyBehavior href="/product-details/2">
                     Agro Vam
                   </Link>
                 </h5>
@@ -261,7 +323,7 @@ const ProductDetails = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h5>
-                  <Link legacyBehavior href="/product-details">
+                  <Link legacyBehavior href="/product-details/3">
                     Agni Manthan
                   </Link>
                 </h5>
@@ -283,7 +345,7 @@ const ProductDetails = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h5>
-                  <Link legacyBehavior href="/product-details">
+                  <Link legacyBehavior href="/product-details/4">
                     Bliss
                   </Link>
                 </h5>
@@ -306,7 +368,7 @@ const ProductDetails = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h5>
-                  <Link legacyBehavior href="/product-details">
+                  <Link legacyBehavior href="/product-details/5">
                     Dhara Manthan
                   </Link>
                 </h5>
@@ -328,7 +390,7 @@ const ProductDetails = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h5>
-                  <Link legacyBehavior href="/product-details">
+                  <Link legacyBehavior href="/product-details/6">
                     Kloris
                   </Link>
                 </h5>
@@ -351,123 +413,8 @@ const ProductDetails = () => {
                   <i className="fas fa-star" />
                 </div>
                 <h5>
-                  <Link legacyBehavior href="/product-details">
+                  <Link legacyBehavior href="/product-details/7">
                     Manglow
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>55</del>
-                  <span>36</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img src="assets/images/products/mercury.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Mercury
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>55</del>
-                  <span>36</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img src="assets/images/products/samudra-manthan.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Samudra Manthan
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>55</del>
-                  <span>36</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img src="assets/images/products/stofi.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Stofi
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>55</del>
-                  <span>36</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img src="assets/images/products/tejas.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Tejas
-                  </Link>
-                </h5>
-                <span className="price">
-                  <del>55</del>
-                  <span>36</span>
-                </span>
-              </div>
-            </div>
-            <div className="product-item wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img src="assets/images/products/vaccin.png" alt="Product" />
-              </div>
-              <div className="content">
-                <div className="ratting">
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                  <i className="fas fa-star" />
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/product-details">
-                    Vaccin
                   </Link>
                 </h5>
                 <span className="price">

@@ -237,7 +237,7 @@ const Index = () => {
               <div className="offer-banner-item color-two wow fadeInUp delay-0-2s">
                 <div className="content">
                   <span className="sub-title">35% Off Foods</span>
-                  <h4>Organic Vegetables</h4>
+                  <h4>Satva Vams</h4>
                   <p>Best Foods For Your Family</p>
                   <Link legacyBehavior href="/shop-grid">
                     <a className="theme-btn style-two">

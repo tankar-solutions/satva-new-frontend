@@ -12,31 +12,41 @@ const ProductDetails = () => {
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-6">
-              <div className="product-preview-images rmb-55 wow fadeInLeft delay-0-2s">
-                <a href="assets/images/products/preview1.png">
-                  <img
-                    src="assets/images/products/preview1.png"
-                    alt="Preview"
-                  />
-                </a>
-                <a href="assets/images/products/preview2.png">
-                  <img
-                    src="assets/images/products/preview2.png"
-                    alt="Preview"
-                  />
-                </a>
-                <a href="assets/images/products/preview3.png">
-                  <img
-                    src="assets/images/products/preview3.png"
-                    alt="Preview"
-                  />
-                </a>
-                <a href="assets/images/products/preview4.png">
-                  <img
-                    src="assets/images/products/preview4.png"
-                    alt="Preview"
-                  />
-                </a>
+              <div className="product-preview-images wow fadeInLeft delay-0-2s">
+                <div
+                  className="single-product-image"
+                  style={{
+                    width: "100%",
+                    paddingBottom: "100%",
+                    position: "relative",
+                    overflow: "hidden",
+                    borderRadius: "8px",
+                    background: "transparent", 
+                    border: "none",
+                  }}
+                >
+                  <a
+                    href="assets/images/products/satva-vam.png"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      display: "block",
+                    }}
+                  >
+                    <img
+                      src="assets/images/products/satva-vam.png"
+                      alt="Preview"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
@@ -52,12 +62,13 @@ const ProductDetails = () => {
                   </div>
                 </div>
                 <div className="section-title mb-20">
-                  <h2>Organic Vegetable</h2>
+                  <h2>Satva Vam</h2>
                 </div>
                 <p>
-                  Sorem ipsum dolor sit amet consectetur adipiscing elit do
-                  eiusmod tempor incididunt ut labore et dolore magna aliquauis
-                  ipsum suspendisse ultrices gravida
+                Satva vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM),
+                 available in both granular and hyphal powder form. It is a beneficial fungus that forms a
+                 symbiotic association with plant roots, enabling better absorption of essential nutrients
+                  like phosphorus, nitrogen, and other micronutrients from the soil.
                 </p>
                 <span className="price mb-20">55.96</span>
                 <hr />
@@ -77,8 +88,7 @@ const ProductDetails = () => {
                     Add to Cart <i className="fas fa-angle-double-right" />
                   </button>
                 </form>
-                <hr />
-                <ul className="category-tags pt-10">
+                {/* <ul className="category-tags pt-10">
                   <li>
                     <b>Category</b>
                     <span>:</span>
@@ -90,7 +100,7 @@ const ProductDetails = () => {
                     <span>:</span>
                     <a href="#">Organic</a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -105,176 +115,27 @@ const ProductDetails = () => {
                   Description
                 </Nav.Link>
               </li>
-              <li>
-                <Nav.Link
-                  eventKey={"information"}
-                  href="#information"
-                  data-toggle="tab"
-                >
-                  Additional information
-                </Nav.Link>
-              </li>
-              <li>
-                <Nav.Link eventKey={"review"} href="#review" data-toggle="tab">
-                  Review (05)
-                </Nav.Link>
-              </li>
+        
             </Nav>
             <Tab.Content className="tab-content wow fadeInUp delay-0-2s">
               <Tab.Pane className="tab-pane" eventKey="details">
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore verit atis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                  dolor sit amet, consectetur, adipisci velit sed quia non
-                  numquam eius modi tempora incidunt ut labore et dolore magnam
-                  aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                  nostrum exercitationem ullam corporis suscipit laboriosam,
-                  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-                  iure reprehenderit qui in ea voluptate velit esse quam nihil
-                  molestiae consequatur, vel illum qui dolorem eum
+                Satva vam is a bio formulation based on Vesicular Arbuscular Mycorrhiza (VAM), available in both granular and hyphal powder form. It is a beneficial fungus that forms a symbiotic association with plant roots, enabling better absorption of essential nutrients like phosphorus, nitrogen, and other micronutrients from the soil.
+
                 </p>
                 <ul className="list-style-one">
-                  <li>The Complete Guide To Switching From HTTP To HTTPS</li>
-                  <li>
-                    Ultimate Digital Clean-Up Checklist: Are You Prepared For
-                    The New Year?
+                  <li>Enhances root development and strengthens the root system.
                   </li>
                   <li>
-                    How To Roll Out New Features Without Hurting Loyal Users
+                  Increases plant resistance to both abiotic stress (drought, cold) and biotic stress (soil-borne pathogens).
                   </li>
+                  <li>
+                  Improves soil texture and structure, enhancing water retention and uptake by plants.
+                  </li>
+                  <li>Acts as a natural facilitator for better nutrient availability and plant growth.</li>
                 </ul>
               </Tab.Pane>
-              <Tab.Pane className="tab-pane" eventKey="information">
-                <p>
-                  inventore veritatis et quasi architecto beatae vitae dicta
-                  sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                  aspernatur aut odit aut fugit, sed quia consequuntur magni
-                  dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                  quisquam est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci velit, sed quia non numquam
-                </p>
-                <ul className="list-style-one mt-25 mb-25">
-                  <li>Strong lens for long distance surveillance.</li>
-                  <li>WIFI technology can view and view the Internet</li>
-                  <li>Wide Angle and Long Length</li>
-                  <li>Smart zooming point</li>
-                  <li>HD quality video output.</li>
-                  <li>Smart Alarming System</li>
-                  <li>Power system 12 volts (without adapter)</li>
-                </ul>
-                <p>
-                  Now wherever you are, wherever you are, you can easily monitor
-                  your CCTV videos through your mobile, tab, laptop or PC. With
-                  the wireless camera, you can view the camera from your mobile
-                  or computer to the right-left 0 to 360-degree video. Cover the
-                  flower room with a camera.
-                </p>
-              </Tab.Pane>
-              <Tab.Pane className="tab-pane" eventKey="review">
-                <ul className="comment-list">
-                  <li>
-                    <div className="comment-body">
-                      <div className="author-thumb">
-                        <img
-                          src="assets/images/products/review-author1.jpg"
-                          alt="Author"
-                        />
-                      </div>
-                      <div className="comment-content">
-                        <div className="name-date">
-                          <h6>John F. Medina</h6>
-                          <span className="comment-date">25 Feb 2022</span>
-                          <div className="ratting">
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                          </div>
-                        </div>
-                        <p>
-                          Quis autem vel eum iure reprehenderit quin voluptate
-                          velit esseeso quam nihile molestiae consequatur
-                          veillum quolore
-                        </p>
-                        <a href="#" className="reply-link">
-                          Reply <i className="fas fa-long-arrow-alt-right" />
-                        </a>
-                      </div>
-                    </div>
-                    <ul className="children">
-                      <li>
-                        <div className="comment-body">
-                          <div className="author-thumb">
-                            <img
-                              src="assets/images/products/review-author2.jpg"
-                              alt="Author"
-                            />
-                          </div>
-                          <div className="comment-content">
-                            <div className="name-date">
-                              <h6>Somalia D. Silva</h6>
-                              <span className="comment-date">25 Feb 2022</span>
-                              <div className="ratting">
-                                <i className="fas fa-star" />
-                                <i className="fas fa-star" />
-                                <i className="fas fa-star" />
-                                <i className="fas fa-star" />
-                                <i className="fas fa-star" />
-                              </div>
-                            </div>
-                            <p>
-                              Quis autem vel eum iure reprehenderit quin
-                              voluptate velit esseeso quam nihile molestiae
-                              consequatur veillum quolore
-                            </p>
-                            <a href="#" className="reply-link">
-                              Reply{" "}
-                              <i className="fas fa-long-arrow-alt-right" />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <div className="comment-body">
-                      <div className="author-thumb">
-                        <img
-                          src="assets/images/products/review-author3.jpg"
-                          alt="Author"
-                        />
-                      </div>
-                      <div className="comment-content">
-                        <div className="name-date">
-                          <h6>Roger A. Torrence</h6>
-                          <span className="comment-date">25 Feb 2022</span>
-                          <div className="ratting">
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                          </div>
-                        </div>
-                        <p>
-                          Quis autem vel eum iure reprehenderit quin voluptate
-                          velit esseeso quam nihile molestiae consequatur
-                          veillum quolore
-                        </p>
-                        <a href="#" className="reply-link">
-                          Reply <i className="fas fa-long-arrow-alt-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </Tab.Pane>
+            
             </Tab.Content>
           </Tab.Container>
         </div>
@@ -377,7 +238,7 @@ const ProductDetails = () => {
           <Slider {...productActiveTwo} className="product-active-two">
             <div className="product-item wow fadeInUp delay-0-2s">
               <div className="image">
-                <img src="assets/images/products/product8.png" alt="Product" />
+                <img src="assets/images/products/agro-vam.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -389,7 +250,7 @@ const ProductDetails = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Oragic Orange
+                    Agro Vam
                   </Link>
                 </h5>
                 <span className="price">
@@ -400,7 +261,7 @@ const ProductDetails = () => {
             <div className="product-item wow fadeInUp delay-0-4s">
               <span className="offer">20 Off</span>
               <div className="image">
-                <img src="assets/images/products/product10.png" alt="Product" />
+                <img src="assets/images/products/agni-manthan.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -412,7 +273,7 @@ const ProductDetails = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Organic Brocolli
+                    Agni Manthan
                   </Link>
                 </h5>
                 <span className="price">
@@ -423,7 +284,7 @@ const ProductDetails = () => {
             </div>
             <div className="product-item wow fadeInUp delay-0-6s">
               <div className="image">
-                <img src="assets/images/products/product11.png" alt="Product" />
+                <img src="assets/images/products/bliss.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -435,7 +296,7 @@ const ProductDetails = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Fresh Carrots
+                    Bliss
                   </Link>
                 </h5>
                 <span className="price">
@@ -447,7 +308,7 @@ const ProductDetails = () => {
             <div className="product-item wow fadeInUp delay-0-8s">
               <span className="offer bg-red">sale</span>
               <div className="image">
-                <img src="assets/images/products/product1.png" alt="Product" />
+                <img src="assets/images/products/dhara-manthan.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -459,7 +320,7 @@ const ProductDetails = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Organic Brocolli
+                    Dhara Manthan
                   </Link>
                 </h5>
                 <span className="price">
@@ -469,7 +330,7 @@ const ProductDetails = () => {
             </div>
             <div className="product-item wow fadeInUp delay-0-2s">
               <div className="image">
-                <img src="assets/images/products/product9.png" alt="Product" />
+                <img src="assets/images/products/kloris.png" alt="Product" />
               </div>
               <div className="content">
                 <div className="ratting">
@@ -481,7 +342,145 @@ const ProductDetails = () => {
                 </div>
                 <h5>
                   <Link legacyBehavior href="/product-details">
-                    Fresh Carrots
+                    Kloris
+                  </Link>
+                </h5>
+                <span className="price">
+                  <del>55</del>
+                  <span>36</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-2s">
+              <div className="image">
+                <img src="assets/images/products/manglow.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Manglow
+                  </Link>
+                </h5>
+                <span className="price">
+                  <del>55</del>
+                  <span>36</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-2s">
+              <div className="image">
+                <img src="assets/images/products/mercury.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Mercury
+                  </Link>
+                </h5>
+                <span className="price">
+                  <del>55</del>
+                  <span>36</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-2s">
+              <div className="image">
+                <img src="assets/images/products/samudra-manthan.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Samudra Manthan
+                  </Link>
+                </h5>
+                <span className="price">
+                  <del>55</del>
+                  <span>36</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-2s">
+              <div className="image">
+                <img src="assets/images/products/stofi.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Stofi
+                  </Link>
+                </h5>
+                <span className="price">
+                  <del>55</del>
+                  <span>36</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-2s">
+              <div className="image">
+                <img src="assets/images/products/tejas.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Tejas
+                  </Link>
+                </h5>
+                <span className="price">
+                  <del>55</del>
+                  <span>36</span>
+                </span>
+              </div>
+            </div>
+            <div className="product-item wow fadeInUp delay-0-2s">
+              <div className="image">
+                <img src="assets/images/products/vaccin.png" alt="Product" />
+              </div>
+              <div className="content">
+                <div className="ratting">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+                <h5>
+                  <Link legacyBehavior href="/product-details">
+                    Vaccin
                   </Link>
                 </h5>
                 <span className="price">

@@ -88,7 +88,7 @@ const PortfolioDetails = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/portfolio-details">
-                      Organic Vegetables
+                      Satva Vams
                     </Link>
                   </h4>
                   <span className="category">Food, Organic</span>

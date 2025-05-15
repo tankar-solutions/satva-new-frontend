@@ -121,7 +121,7 @@ const About = () => {
                       alt="Feature"
                     />
                   </div>
-                  <h4>Organic Vegetables</h4>
+                  <h4>Satva Vams</h4>
                   <p>
                     Quis autem vel eum reprehenderit quiea voluptate velit esse
                     quam niyate smolestiae consequatur nulla

@@ -44,50 +44,31 @@ const SearchBtn = () => {
 const DaskTopMenu = () => (
   <ul className="navigation clearfix d-none d-lg-flex">
     <li className="dropdown">
-      <a href="#">Home</a>
-      <ul>
-        <Home />
-      </ul>
-      <div className="dropdown-btn">
-        <span className="fas fa-chevron-down" />
-      </div>
+      <Link legacyBehavior href="/">
+        Home
+      </Link>
     </li>
     <li className="dropdown">
-      <a href="#">pages</a>
-      <ul>
-        <PagesDasktop />
-      </ul>
-      <div className="dropdown-btn">
-        <span className="fas fa-chevron-down" />
-      </div>
+      <Link legacyBehavior href="/products">
+        Products
+      </Link>
     </li>
     <li className="dropdown">
-      <a href="#">portfolio</a>
-      <ul>
-        <Portfolio />
-      </ul>
-      <div className="dropdown-btn">
-        <span className="fas fa-chevron-down" />
-      </div>
+       <Link legacyBehavior href="/about-us">
+        About us
+      </Link>
     </li>
     <li className="dropdown">
-      <a href="#">blog</a>
-      <ul>
-        <Blog />
-      </ul>
-      <div className="dropdown-btn">
-        <span className="fas fa-chevron-down" />
-      </div>
+      <Link legacyBehavior href="/why-us">
+        Why Us
+      </Link>
     </li>
     <li className="dropdown">
-      <a href="#">shop</a>
-      <ul>
-        <Shop />
-      </ul>
-      <div className="dropdown-btn">
-        <span className="fas fa-chevron-down" />
-      </div>
+      <Link legacyBehavior href="/blog">
+        Blog
+      </Link>
     </li>
+    
     <Contact />
   </ul>
 );

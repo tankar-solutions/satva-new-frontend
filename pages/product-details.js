@@ -51,16 +51,6 @@ const ProductDetails = () => {
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="product-details-content mb-30 wow fadeInRight delay-0-2s">
-                <div className="off-ratting mb-15">
-                  <span className="off">20 Off</span>
-                  <div className="ratting">
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                  </div>
-                </div>
                 <div className="section-title mb-20">
                   <h2>Satva Vam</h2>
                 </div>
@@ -259,7 +249,6 @@ const ProductDetails = () => {
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-4s">
-              <span className="offer">20 Off</span>
               <div className="image">
                 <img src="assets/images/products/agni-manthan.png" alt="Product" />
               </div>
@@ -277,7 +266,6 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>25</del>
                   <span>18</span>
                 </span>
               </div>
@@ -306,7 +294,6 @@ const ProductDetails = () => {
               </div>
             </div>
             <div className="product-item wow fadeInUp delay-0-8s">
-              <span className="offer bg-red">sale</span>
               <div className="image">
                 <img src="assets/images/products/dhara-manthan.png" alt="Product" />
               </div>

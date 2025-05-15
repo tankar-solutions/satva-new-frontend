@@ -36,7 +36,7 @@ const Index = () => {
       </section>
       {/* Slider Section End */}
       {/* Category Section Start */}
-      <section className="category-section pt-130 rpt-100">
+      {/* <section className="category-section pt-130 rpt-100">
         <div className="container">
           <div className="row align-items-end pb-35">
             <div className="col-lg-7 wow fadeInUp delay-0-2s">
@@ -115,7 +115,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Category Section End */}
       {/* About Section Start */}
       <section className="about-section pt-85 rpt-55 pb-130 rpb-100">
@@ -141,11 +141,11 @@ const Index = () => {
               <div className="about-content rpt-65 wow fadeInRight delay-0-2s">
                 <div className="section-title mb-35">
                   <span className="sub-title mb-20">About Company</span>
-                  <h2>Organic &amp; Helathy Foods Provider Farming</h2>
+                  <h2>Botanical Based Bio-Pesticides Manufacturer In India</h2>
                 </div>
                 <Tab.Container defaultActiveKey={"agriculture"}>
                   <Nav className="nav jusctify-content-between">
-                    <li>
+                    {/* <li>
                       <Nav.Link
                         eventKey="agriculture"
                         className="nav-link"
@@ -159,9 +159,9 @@ const Index = () => {
                           &amp; Foods
                         </h4>
                       </Nav.Link>
-                    </li>
+                    </li> */}
                     <li>
-                      <Nav.Link
+                      {/* <Nav.Link
                         eventKey="vegetables"
                         className="nav-link"
                         data-toggle="tab"
@@ -173,7 +173,7 @@ const Index = () => {
                           <br />
                           &amp; Fruits
                         </h4>
-                      </Nav.Link>
+                      </Nav.Link> */}
                     </li>
                   </Nav>
                   <Tab.Content className="tab-content pt-25">
@@ -184,7 +184,7 @@ const Index = () => {
                         charms of pleasure of the moment so blinded by desire,
                         that they cannot foresee the pain
                       </p>
-                      <div className="author-wrap">
+                      {/* <div className="author-wrap">
                         <img
                           src="assets/images/about/author.jpg"
                           alt="Authro"
@@ -197,16 +197,13 @@ const Index = () => {
                           src="assets/images/about/signature.png"
                           alt="Signature"
                         />
-                      </div>
+                      </div> */}
                     </Tab.Pane>
                     <Tab.Pane className="tab-pane fade" eventKey="vegetables">
                       <p>
-                        Charms of pleasure of the moment so blinded by desire,
-                        that they cannot foresee the pain On the other hand we
-                        denounce with righteous indignation and dislike men who
-                        are beguiled and demoralized by the
+                        Satvacare provides ECOCERT-approved, NOP-NPOP certified, and patented organic pest management solutions including bio-insecticides, fungicides, acaricides, adjuvants, and CIBRC-certified neem-based products. With a strong focus on reducing production costs for farmers, Satvacare promotes biodiversity and healthy living by replacing harmful chemical pesticides with botanical-based, eco-friendly alternatives that meet global export standards and protect the environment.
                       </p>
-                      <div className="author-wrap">
+                      {/* <div className="author-wrap">
                         <img
                           src="assets/images/about/author.jpg"
                           alt="Authro"
@@ -219,7 +216,7 @@ const Index = () => {
                           src="assets/images/about/signature.png"
                           alt="Signature"
                         />
-                      </div>
+                      </div> */}
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
@@ -230,14 +227,14 @@ const Index = () => {
       </section>
       {/* About Section End */}
       {/* Offer Banners Start */}
-      <section className="offer-banners-area">
+      {/* <section className="offer-banners-area">
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-4 col-md-6">
               <div className="offer-banner-item color-two wow fadeInUp delay-0-2s">
                 <div className="content">
                   <span className="sub-title">35% Off Foods</span>
-                  <h4>Organic Vegetables</h4>
+                  <h4>Satva Vams</h4>
                   <p>Best Foods For Your Family</p>
                   <Link legacyBehavior href="/shop-grid">
                     <a className="theme-btn style-two">
@@ -310,7 +307,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Offer Banners End */}
       {/* Product Section Start */}
       <section className="product-section pt-100 rpt-70 pb-130 rpb-100">
@@ -491,7 +488,7 @@ const Index = () => {
       </section>
       {/* Product Section End */}
       {/* Video Area Start */}
-      <div className="video-area">
+      {/* <div className="video-area">
         <div className="container">
           <div
             className="video-inner wow fadeInUp delay-0-2s"
@@ -507,10 +504,10 @@ const Index = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Video Area End */}
       {/* Special Offer Start */}
-      <section className="special-offer bg-lighter pt-250 pb-80">
+      {/* <section className="special-offer bg-lighter pt-250 pb-80">
         <div className="special-offer-content text-center py-130 rpy-100 wow fadeInUp delay-0-2s">
           <div className="section-title mb-30">
             <span className="sub-title mb-20">35% Off for Fruits</span>
@@ -559,10 +556,10 @@ const Index = () => {
           src="assets/images/offers/offer-right.png"
           alt="Offer"
         />
-      </section>
+      </section> */}
       {/* Special Offer End */}
       {/* Call To Action Area Start */}
-      <section className="cta-area">
+      {/* <section className="cta-area">
         <div className="container">
           <div
             className="cta-inner overlay text-white wow fadeInUp delay-0-2s"
@@ -587,7 +584,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Call To Action Area End */}
       {/* Gallery Area Start */}
       <section className="gallery-area pt-130 rpt-100">
@@ -595,7 +592,7 @@ const Index = () => {
       </section>
       {/* Gallery Area End */}
       {/* Feedback Section Start */}
-      <section className="feedback-section pt-50 rpt-20">
+      {/* <section className="feedback-section pt-50 rpt-20">
         <div className="container">
           <div className="row large-gap">
             <div className="col-lg-6">
@@ -622,7 +619,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Feedback Section End */}
       {/* News Section Start */}
       <section className="news-section pt-130 rpt-100 pb-70 rpb-40">

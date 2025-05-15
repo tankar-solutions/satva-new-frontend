@@ -54,11 +54,6 @@ const DefaultFooter = () => (
                 </a>
               </Link>
             </div>
-            <p>
-              Sit amet consectetur adipiscing elit sed eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. quis ipsum suspendisse ultrices
-              gravida.
-            </p>
             <div className="social-style-two pt-10">
               <Link legacyBehavior href="/contact">
                 <a>

@@ -151,17 +151,18 @@ const DefaultFooter = () => (
             <ul>
               <li>
                 <i className="fal fa-map-marker-alt" />
-                At Movaiya, Beside World Steel,
-                    Paddhari - Mitana Road, Paddhari,
-                    Rajkot - Gujarat.
+                At Movaiya, Beside World Steel, Paddhari - Mitana Road,
+                Paddhari, Rajkot - Gujarat.
+              </li>
+              <li>
+                <i className="fas fa-phone-alt" />
+                <a href="tel:+91 88 66 908 906"> +91 88 66 908 906</a>
               </li>
               <li>
                 <i className="far fa-envelope" />
-                <a href="calto:+91 88 66 908 906"> +91 88 66 908 906</a>
-              </li>
-              <li>
-                <i className="far fa-phone" />
-                <a href="mailto:shasvatcropscience@gmail.com">shasvatcropscience@gmail.com</a>
+                <a href="mailto:shasvatcropscience@gmail.com">
+                  shasvatcropscience@gmail.com
+                </a>
               </li>
             </ul>
           </div>
@@ -373,13 +374,14 @@ const Footer3 = () => (
                 <ul>
                   <li>
                     <i className="fal fa-map-marker-alt" />
-                    At Movaiya, Beside World Steel,
-                    Paddhari - Mitana Road, Paddhari,
-                    Rajkot - Gujarat.
+                    At Movaiya, Beside World Steel, Paddhari - Mitana Road,
+                    Paddhari, Rajkot - Gujarat.
                   </li>
                   <li>
                     <i className="far fa-phone" />
-                    <a href="mailto:shasvatcropscience@gmail.com">shasvatcropscience@gmail.com</a>
+                    <a href="mailto:shasvatcropscience@gmail.com">
+                      shasvatcropscience@gmail.com
+                    </a>
                   </li>
                   <li>
                     <i className="far fa-envelope" />

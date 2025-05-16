@@ -60,7 +60,7 @@ const ProductDetails = () => {
                  symbiotic association with plant roots, enabling better absorption of essential nutrients
                   like phosphorus, nitrogen, and other micronutrients from the soil.
                 </p>
-                <span className="price mb-20">55.96</span>
+                <span className="price mb-20">9999</span>
                 <hr />
                 <form
                   onSubmit={(e) => e.preventDefault()}
@@ -244,7 +244,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <span>85</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -266,7 +266,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <span>18</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -288,8 +288,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -311,7 +310,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <span>205</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -333,8 +332,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -356,8 +354,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -379,8 +376,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -402,8 +398,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -425,8 +420,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -448,8 +442,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>
@@ -471,8 +464,7 @@ const ProductDetails = () => {
                   </Link>
                 </h5>
                 <span className="price">
-                  <del>55</del>
-                  <span>36</span>
+                  <span>9999</span>
                 </span>
               </div>
             </div>

@@ -125,7 +125,7 @@ const DefaultHeader = () => (
                     <a href="mailto:shasvatcropscience@gmail.com">shasvatcropscience@gmail.com</a>
                   </li>
                   <li>
-                    <i className="far fa-phone" /> <b>Call :</b>{" "}
+                    <i className="fas fa-phone-alt" /> <b>Call :</b>{" "}
                     <a href="callto:+91 88 66 908 906"> +91 88 66 908 906</a>
                   </li>
                 </ul>
@@ -223,7 +223,7 @@ const Header1 = () => (
                     <a href="mailto:shasvatcropscience@gmail.com">shasvatcropscience@gmail.com</a>
                   </li>
                   <li>
-                    <i className="far fa-phone" /> <b>Call :</b>{" "}
+                    <i className="fas fa-phone-alt" /> <b>Call :</b>{" "}
                     <a href="callto:+012(345)67899"> +91 88 66 908 906</a>
                   </li>
                 </ul>
